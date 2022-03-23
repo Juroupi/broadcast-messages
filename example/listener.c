@@ -14,7 +14,7 @@ int main() {
 	
 	while (receiveBroadcastMessage(s, message, sizeof(message)) >= 0) {
 		
-		if (strcmp(message, "stop")) {
+		if (strcmp(message, "stop") == 0) {
 			break;
 		}
 		
